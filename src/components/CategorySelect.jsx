@@ -1,5 +1,4 @@
-const CategorySelect = ({ onCategoryChange}) => {
-
+const CategorySelect = ({ onCategoryChange }) => {
     const categories = [
         "L'École - La Classe - L'Instruction",
         "Paysages - Climat - Formes",
@@ -31,14 +30,18 @@ const CategorySelect = ({ onCategoryChange}) => {
     ];
 
     const handleChange = (e) => {
-        onCategoryChange(e.target.value);
+        const selectedIndex = e.target.selectedIndex;
+        const selectedOption = e.target.options[selectedIndex];
+        const categoryId = selectedOption.value;
+        const categoryName = selectedOption.getAttribute('data-category-name') || selectedOption.text;
+        onCategoryChange(categoryId, categoryName);
     }
 
     return (
         <select onChange={handleChange}>
             <option value="0">Toutes les catégories</option>
             {categories.map((category, index) => (
-                <option key={index} value={index + 1}>{category}</option>
+                <option key={index} value={index + 1} data-category-name={category}>{category}</option>
             ))}
         </select>
     );

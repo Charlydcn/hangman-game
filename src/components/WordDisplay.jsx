@@ -1,6 +1,7 @@
 import Letters from "./Letters";
 
 const WordDisplay = ({ word, normalizeLetter, guessedLetters }) => {
+    if(!word) return null;
         
     const wordLetters = word.split('');
     

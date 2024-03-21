@@ -1,23 +1,34 @@
 import React from 'react';
 
-const Letters = ({ handleLetterPress }) => {
-    const alphabet = [
-        'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 
-        'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
-    ];
-    
+const Letters = ({ handleLetterPress, attemptedLetters, guessedLetters }) => {
+    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
     return (
         <ul id="letters">
-          {
-            alphabet.map((letter, index) => (
-                <li key={index} onClick={() => handleLetterPress(letter)}>
-                    {letter}
-                </li>
-            ))
-          }
+            {alphabet.map((letter) => {
+                // Détermine si la lettre a été tentée
+                const normalizedLetter = letter.toLowerCase();
+                const isAttempted = attemptedLetters.includes(normalizedLetter);
+                const isCorrect = guessedLetters.includes(normalizedLetter);
+                let className = '';
+
+                if (isAttempted) {
+                    className = isCorrect ? 'correct' : 'incorrect';
+                }
+
+                return (
+                    <li 
+                        key={letter} 
+                        className={className} // Ajoute 'correct' ou 'incorrect' en fonction de si la lettre est dans guessedLetters
+                        onClick={() => handleLetterPress(normalizedLetter)}
+                    >
+                        {letter}
+                    </li>
+                );
+            })}
         </ul>
-    )    
+    );
 }
+
 
 export default Letters;
