@@ -439,6 +439,7 @@ return (
 
             <div
                 id="game"
+                className={gameRunning ? 'active' : 'not-active'}
                 style={
                     {
                         backgroundColor: !gameRunning ? 'var(--violet1)' : '',
@@ -473,7 +474,7 @@ return (
                     <>
                         <img className="endgame-img victory" src={happyImg} alt="" />
                         <div className="endgame-container">
-                            <h3>Bravo ! Vous avez gagné ! <span onClick={triggerConfettiExplosion}>🎉</span></h3>
+                            <h3>Bravo&nbsp;! Vous avez gagné&nbsp;! <span onClick={triggerConfettiExplosion}>🎉</span></h3>
                             <button onClick={startGame}>Rejouer</button>
                         </div>
                         {isExploding && <ConfettiExplosion />}
@@ -485,11 +486,11 @@ return (
                 // game is not running  -------------------------------------------------------------------
                 ) : ( !word ? ( 
                         <>
-                            <Arrow color="#62466b" />
-                            <h2>
-                                Sélectionnez une catégorie et générez un mot ! 
-                                <FontAwesomeIcon icon={faThumbsUp} />
-                            </h2>
+                            <Arrow color="#62466b"/>
+                            <div className='intro-title'>
+                                <h2>Sélectionnez une catégorie et générez un mot !</h2>
+                                <FontAwesomeIcon icon={faThumbsUp}/>
+                            </div>
                         </>
 
 
