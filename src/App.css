@@ -102,7 +102,7 @@ button {
     top: 3rem;
     left: 50%;
     transform: translateY(-50%);
-    width: fit-content;
+    width: 13rem;
 }
 
 .tooltip {
