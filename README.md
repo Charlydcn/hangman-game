@@ -1,9 +1,9 @@
 
-![France](https://raw.githubusercontent.com/stevenrskelton/flag-icon/master/png/16/country-4x3/fr.png "France")
+![FR flag](/public/readme-assets/fr-flag.png)
 
-# Projet Jeu du Pendu 🎮
+# Jeu du Pendu 🎮
 
-![GIF du jeu](/public/presentation-hangman-game.gif)
+![GIF du jeu](/public/readme-assets/presentation-hangman-game.gif)
 
 ## Technologies utilisées
 
@@ -61,3 +61,74 @@ Assurez-vous d'avoir les éléments suivants installés avant de commencer :
 ## Contribution
 
 💡 Les contributions sont les bienvenues ! Que ce soit pour ajouter de nouvelles fonctionnalités, améliorer l'accessibilité du jeu, ou corriger des bugs, n'hésitez pas à forker ce dépôt et soumettre une pull request.
+
+<br>
+<br>
+_________________________________________________________________________________________________________________________________________________
+<br>
+<br>
+<br>
+
+
+![UK flag](/public/readme-assets/uk-flag.png)
+# Hangman Game 🎮
+
+![Game GIF](/public/presentation-hangman-game.gif)
+
+## Technologies Used
+
+- ![React](https://img.shields.io/badge/-React.js-61DAFB?style=flat&logo=react&logoColor=black) : User interface built with reactive components and efficiently managed state.
+- ![Vite](https://img.shields.io/badge/-Vite-646CFF?style=flat&logo=vite&logoColor=white) : Ultra-fast module refreshing and optimized compilation time.
+- ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white) : Structuring the game's content.
+- ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white) : Styling the game's interface, with a focus on responsive design.
+- ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) : Implementing game logic and API calls.
+- ![API](https://img.shields.io/badge/-API-0A0A0A?style=flat&logo=swagger&logoColor=white) : Using the `https://trouve-mot.fr/` API to generate random words by category.
+
+## Features
+
+- 📚 **Dynamic Word Generation:** Uses the API to fetch random words, either within a specific category or not, ensuring a varied and stimulating experience with each game.
+- ⌨️ **Keyboard Accessibility:** Fully playable with the keyboard, promoting accessibility for all users.
+- 💡 **Interactive User Interface:** A clear and intuitive interface that provides immediate feedback on guesses and game progress.
+- 📖 **Game History:** Keeps track of the game history, including wins and losses, guessed words, and number of errors.
+
+## Project Deployment
+
+Ensure you have the following installed before starting:
+- Node.js (>= 12.x)
+- npm (>= 6.x) or yarn (>= 1.22.x)
+
+### Steps
+
+1. **Clone the repository**
+
+   BASH
+   git clone https://yourrepositoryurl.com/path/to/hangman.git
+   cd hangman
+   BASH
+
+2. **Install dependencies**
+
+   With npm:
+   BASH
+   npm install
+   BASH
+   With yarn:
+   BASH
+   yarn
+   BASH
+
+3. **Start the development server**
+
+   With npm:
+   BASH
+   npm run dev
+   BASH
+   With yarn:
+   BASH
+   yarn dev
+   BASH
+
+## Contribution
+
+💡 Contributions are welcome! Whether it's adding new features, improving the game's accessibility, or fixing bugs, feel free to fork this repository and submit a pull request.
+
