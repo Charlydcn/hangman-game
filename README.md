@@ -19,7 +19,7 @@
 - 📚 **Génération dynamique de mots :** Utilise l'API  pour obtenir des mots aléatoires, selon une catégorie donnée ou non, assurant une expérience variée et stimulante à chaque partie.
 - ⌨️ **Accessibilité au clavier :** Entièrement jouable au clavier, favorisant l'accessibilité pour tous les utilisateurs.
 - 💡 **Interface utilisateur interactive :** Une interface claire et intuitive qui fournit un retour immédiat sur les devinettes et la progression de la partie.
-- 📖 **Historique du jeu :** Garde une trace de l'historique de jeu, incluant les victoires et les défaites, les mots devinés et le nombre d'erreurs.
+- 📖 **Historique du jeu :** Historique des parties, avec le résultat de la partie, le nombre d'erreurs, le mot de la partie, et la date, avec des statistiques globales (taux de victoire, nombre total d'erreurs, nombre de parties/victoires/défaites..)
 
 ## Déploiement du projet
 
@@ -89,7 +89,7 @@ ________________________________________________________________________________
 - 📚 **Dynamic Word Generation:** Uses the API to fetch random words, either within a specific category or not, ensuring a varied and stimulating experience with each game.
 - ⌨️ **Keyboard Accessibility:** Fully playable with the keyboard, promoting accessibility for all users.
 - 💡 **Interactive User Interface:** A clear and intuitive interface that provides immediate feedback on guesses and game progress.
-- 📖 **Game History:** Keeps track of the game history, including wins and losses, guessed words, and number of errors.
+- 📖 **Game History:** Game history, including game result, number of errors, word of the game, and date, along with overall statistics (win rate, total number of errors, number of games/wins/losses...)
 
 ## Project Deployment
 
