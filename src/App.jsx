@@ -77,7 +77,7 @@ function App() {
                 })
                 .catch(error => console.error(error));
         }
-    }, [triggerKey, ]);
+    }, [triggerKey]);
     // ---------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -291,7 +291,15 @@ function App() {
     // handle key press ----------------------------------------------------------------------------------------------------------------
     useEffect(() => {
         const handleKeyPress = (e) => {
+            if(e.key === '?' || e.key === ',') {
+                toggleModal();
+                return;
+            }
             if (!gameRunning) {
+                if(e.key === 'Enter') {
+                    startGame();
+                    return;
+                }
                 console.log('Game is not running !');
                 return;
             }
@@ -490,6 +498,8 @@ return (
                             <div className='intro-title'>
                                 <h2>Sélectionnez une catégorie et générez un mot !</h2>
                                 <FontAwesomeIcon icon={faThumbsUp}/>
+                                <h4>Appuyez sur Entrée pour lancer une partie</h4>
+                                <h4>Appuyez sur '?' ou ',' pour voir l'historique des parties</h4>
                             </div>
                         </>
 
