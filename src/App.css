@@ -94,6 +94,7 @@ button {
     color: var(--couleur0);
 }
 
+#game > svg:first-of-type,
 .arrow {
     rotate: -80deg;
     height: 12rem;
