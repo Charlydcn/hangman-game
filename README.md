@@ -3,6 +3,8 @@
 
 # Jeu du Pendu 🎮
 
+[hangman-game-2-0.vercel.app](https://hangman-game-2-0.vercel.app/)
+
 ![GIF du jeu](/public/readme-assets/presentation-hangman-game.gif)
 
 ## Technologies utilisées
@@ -64,7 +66,7 @@ Assurez-vous d'avoir les éléments suivants installés avant de commencer :
 
 <br>
 <br>
-_________________________________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________
 <br>
 <br>
 <br>
@@ -72,6 +74,8 @@ ________________________________________________________________________________
 
 ![UK flag](/public/readme-assets/uk-flag.png)
 # Hangman Game 🎮
+
+[hangman-game-2-0.vercel.app](https://hangman-game-2-0.vercel.app/)
 
 ![Game GIF](/public/presentation-hangman-game.gif)
 
